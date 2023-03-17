@@ -26,5 +26,7 @@ module.exports = {
     parser: '@typescript-eslint/parser',
   },
   plugins: ['react'],
-  rules: {},
+  rules: {
+    '@typescript-eslint/restrict-template-expressions': 0,
+  },
 };
