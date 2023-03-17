@@ -7,17 +7,23 @@ import _ExitIcon from './_ExitIcon';
 import _ArrowIcon from './_ArrowIcon';
 import { type TypeIcon } from '../../../types/Types';
 
-const Icon = ({ type }: { type?: TypeIcon }): JSX.Element => {
+const Icon = ({
+  type,
+  isLight,
+}: {
+  type?: TypeIcon;
+  isLight?: boolean;
+}): JSX.Element => {
   return (
     <>
-      {type === 'user' && <_UserIcon />}
-      {type === 'search' && <_SearchIcon />}
-      {type === 'show' && <_ShowIcon />}
-      {type === 'hide' && <_HideIcon />}
+      {type === 'user' && <_UserIcon isLight={isLight} />}
+      {type === 'search' && <_SearchIcon isLight={isLight} />}
+      {type === 'show' && <_ShowIcon isLight={isLight} />}
+      {type === 'hide' && <_HideIcon isLight={isLight} />}
       {type === 'logo' && <_LogoIcon />}
       {type === 'exit' && <_ExitIcon />}
-      {type === 'right-arrow' && <_ArrowIcon leftDirection={false} />}
-      {type === 'left-arrow' && <_ArrowIcon leftDirection />}
+      {type === 'right-arrow' && <_ArrowIcon leftDirection={false} isLight />}
+      {type === 'left-arrow' && <_ArrowIcon leftDirection isLight />}
     </>
   );
 };
