@@ -8,6 +8,7 @@ module.exports = {
         secondary: '#44EABB',
         third: '#D8E8E4',
         fourth: '#080E2C',
+        transparent: 'transparent',
       },
     },
   },

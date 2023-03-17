@@ -7,3 +7,5 @@ export type TypeIcon =
   | 'exit'
   | 'right-arrow'
   | 'left-arrow';
+
+export type TypeButton = 'primary' | 'secondary' | 'third';

@@ -28,5 +28,6 @@ module.exports = {
   plugins: ['react'],
   rules: {
     '@typescript-eslint/restrict-template-expressions': 0,
+    'react/display-name': 0,
   },
 };
