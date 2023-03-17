@@ -1,6 +1,6 @@
 function _ExitIcon() {
   return (
-    <svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+    <svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg' height={20}>
       <style>
         {
           '.cls-1{fill:none;stroke:#080E2C;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}'
