@@ -7,8 +7,8 @@ beforeEach(() => {
   jest.clearAllMocks();
 });
 
-describe('Testing <Icon /> component', () => {
-  test('should to render icon user ', () => {
+describe('Testing <Text /> component', () => {
+  test('should to render text ', () => {
     render(<Text>{text}</Text>);
     screen.getByText(text);
   });

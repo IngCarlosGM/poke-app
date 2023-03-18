@@ -7,7 +7,7 @@ beforeEach(() => {
   jest.clearAllMocks();
 });
 
-describe('Testing <Button /> component', () => {
+describe('Testing <Text /> component', () => {
   test('should to render the title without a especific type. Default h1', () => {
     render(<Title>{text}</Title>);
     screen.getByText(text);
