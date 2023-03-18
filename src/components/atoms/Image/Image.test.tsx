@@ -12,7 +12,6 @@ describe('Testing <Image /> component', () => {
       />
     );
     expect(screen).toMatchSnapshot();
-    screen.debug();
     expect(screen.getByRole('img')).toBeInTheDocument();
     expect(screen.getByRole('img')).toHaveAttribute('alt', 'Test alt');
     expect(screen.getByRole('img')).toHaveAttribute('height', '200px');

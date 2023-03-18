@@ -6,3 +6,4 @@ export { default as Title } from './Title/Title';
 export { default as Separator } from './Separator/Separator';
 export { default as Input } from './Input/Input';
 export { default as Image } from './Image/Image';
+export { default as Label } from './Label/Label';
