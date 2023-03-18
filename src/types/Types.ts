@@ -11,3 +11,5 @@ export type TypeIcon =
 export type TypeButton = 'primary' | 'secondary' | 'third';
 
 export type TypeTitle = 'h1' | 'h2' | 'h3';
+
+export type TypeInput = 'text' | 'password' | 'email' | 'submit';
