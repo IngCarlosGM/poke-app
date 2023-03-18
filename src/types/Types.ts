@@ -9,3 +9,5 @@ export type TypeIcon =
   | 'left-arrow';
 
 export type TypeButton = 'primary' | 'secondary' | 'third';
+
+export type TypeTitle = 'h1' | 'h2' | 'h3';
