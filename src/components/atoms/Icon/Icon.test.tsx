@@ -14,6 +14,8 @@ jest.mock('./_LogoIcon', () => () => 'LogoIcon');
 
 jest.mock('./_ExitIcon', () => () => 'ExitIcon');
 
+jest.mock('./_CaretIcon', () => () => 'CaretIcon');
+
 jest.mock(
   './_ArrowIcon',
   () =>
@@ -64,5 +66,10 @@ describe('Testing <Icon /> component', () => {
   test('should to render icon exit ', () => {
     render(<Icon type='right-arrow' />);
     screen.getByText('ArrowIcon false');
+  });
+
+  test('should to render icon caret ', () => {
+    render(<Icon type='caret' />);
+    screen.getByText('CaretIcon');
   });
 });

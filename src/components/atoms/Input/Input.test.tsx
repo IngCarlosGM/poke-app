@@ -1,5 +1,5 @@
 import { createEvent, fireEvent, render, screen } from '@testing-library/react';
-import { pattern } from '../../../mocks/patterns';
+import { getPatternEmail } from '../../../mocks/patternsMock';
 import Input from './Input';
 
 jest.mock(
@@ -25,7 +25,7 @@ describe('Testing <Input /> component', () => {
         value='correo@mail.com'
         onChange={handleChangeEmailSpy}
         icon='user'
-        pattern={pattern}
+        pattern={getPatternEmail}
         id='my-id'
         placeholder='my-placeholder'
         name='name-input'
@@ -40,7 +40,10 @@ describe('Testing <Input /> component', () => {
       'value',
       'correo@mail.com'
     );
-    expect(screen.getByRole('textbox')).toHaveAttribute('pattern', pattern);
+    expect(screen.getByRole('textbox')).toHaveAttribute(
+      'pattern',
+      getPatternEmail
+    );
     expect(screen.getByRole('textbox')).toHaveAttribute('id', 'my-id');
     expect(screen.getByRole('textbox')).toHaveAttribute(
       'placeholder',
@@ -57,7 +60,7 @@ describe('Testing <Input /> component', () => {
         value='correo@mail.com'
         onChange={handleChangeEmailSpy}
         icon='user'
-        pattern={pattern}
+        pattern={getPatternEmail}
         id='password'
       />
     );
@@ -71,7 +74,7 @@ describe('Testing <Input /> component', () => {
         type='email'
         value=''
         onChange={handleChangeEmailSpy}
-        pattern={pattern}
+        pattern={getPatternEmail}
       />
     );
     const inputText = getByRole('textbox');
