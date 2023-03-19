@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from 'react';
 import tw from 'twin.macro';
-import { type TypeMenuItem } from '../../types/Types';
-import { BasicDropdown, Button } from '../atoms';
+import { type TypeMenuItem } from '../../../types/Types';
+import { BasicDropdown, Button } from '../../atoms';
 
 function Dropdown({
   name,
