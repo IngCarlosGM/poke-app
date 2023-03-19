@@ -24,7 +24,7 @@ function Input({
   name?: string;
   pattern?: string;
   required?: boolean;
-  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  onChange?: (newValue: string) => void;
 }): JSX.Element {
   const [typeIconShow, setTypeIconShow] = useState<TypeIcon>();
   const [typeInput, setTypeInput] = useState<TypeInput>();
@@ -44,6 +44,14 @@ function Input({
     }
   };
 
+  const handlerOnChange = (
+    event: React.ChangeEvent<HTMLInputElement>
+  ): void => {
+    if (onChange !== undefined) {
+      onChange(event.target.value);
+    }
+  };
+
   return (
     <div css={[tw`flex items-center w-min`]}>
       <_InputStyled
@@ -54,8 +62,9 @@ function Input({
         name={name}
         pattern={pattern}
         required={required}
-        onChange={onChange}
+        onChange={handlerOnChange}
         isSubmit={type === 'submit'}
+        hasIcon={icon !== undefined}
       />
       <div
         css={[
