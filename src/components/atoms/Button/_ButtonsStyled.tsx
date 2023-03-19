@@ -1,6 +1,6 @@
 import tw from 'twin.macro';
 
-export const _ButtonBaseStyled = tw.button`bg-white border-0 text-fourth w-2/5 md:w-40 lg:w-60 h-12 lg:h-14 flex justify-between items-center p-4 rounded-md cursor-pointer outline-1 outline-cyan-500`;
+export const _ButtonBaseStyled = tw.button`bg-white border-0 text-fourth w-full h-8 sm:h-12 md:w-40 lg:w-44 lg:h-14 flex justify-center items-center p-4 rounded-md cursor-pointer outline-1 outline-cyan-500`;
 
 export const _PrimaryButtonsStyled = tw(
   _ButtonBaseStyled
