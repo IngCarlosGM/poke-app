@@ -8,3 +8,4 @@ export { default as Input } from './Input/Input';
 export { default as Image } from './Image/Image';
 export { default as Label } from './Label/Label';
 export { default as BasicDropdown } from './Dropdown/BasicDropdown';
+export { default as Badge } from './Badge/Badge';
