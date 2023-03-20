@@ -5,8 +5,7 @@ function getUsers(): TypeUser[] {
     {
       name: 'Carlos Gamboa',
       username: 'carlos@mail.com',
-      sourceAvatar:
-        'https://cdn4.iconfinder.com/data/icons/linecon/512/photo-512.png',
+      sourceAvatar: 'https://cdn-icons-png.flaticon.com/512/4333/4333609.png',
     },
   ];
 }
