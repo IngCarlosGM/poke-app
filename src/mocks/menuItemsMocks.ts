@@ -13,4 +13,10 @@ export const menuItemsMock: TypeMenuItem[] = [
       alert('Item 2');
     },
   },
+  {
+    label: 'Salir',
+    handlerMenuItem: () => {
+      alert('Saliendo');
+    },
+  },
 ];

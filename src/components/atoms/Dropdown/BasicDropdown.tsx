@@ -46,9 +46,6 @@ function BasicDropdown({
           ))
         )}
       </ul>
-      <div css={[tw`py-2 border-x-0`]}>
-        <_MenuItemDropdown text='Salir' handlerIsOpen={handlerOpen} />
-      </div>
     </div>
   );
 }
